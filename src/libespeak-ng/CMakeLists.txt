@@ -1,6 +1,7 @@
 set(ESPEAK_CONFIG_DIR ${CMAKE_CURRENT_BINARY_DIR}/include)
-set(ESPEAK_CONFIG_H ${ESPEAK_CONFIG_DIR}/config.h)
-configure_file(config.h.in ${ESPEAK_CONFIG_H})
+configure_file(config.h.in ${CMAKE_CURRENT_SOURCE_DIR}/../config.h)
+configure_file(config.h.in ${CMAKE_CURRENT_SOURCE_DIR}/../include/config.h)
+configure_file(config.h.in ${CMAKE_CURRENT_SOURCE_DIR}/../../tests/config.h)
 
 add_library(espeak-ng-config INTERFACE)
 target_include_directories(espeak-ng-config INTERFACE ${ESPEAK_CONFIG_DIR})
