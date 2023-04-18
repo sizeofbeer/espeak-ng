@@ -38,7 +38,7 @@ void speechPlayer_queueFrame(speechPlayer_handle_t playerHandle, speechPlayer_fr
 	playerHandleInfo->frameManager->queueFrame(framePtr,minFrameDuration,fadeDuration,userIndex,purgeQueue);
 }
 
-int speechPlayer_synthesize(speechPlayer_handle_t playerHandle, unsigned int sampleCount, sample* sampleBuf) {
+int speechPlayer_synthesize(speechPlayer_handle_t playerHandle, unsigned int sampleCount, ngSample* sampleBuf) {
 	return ((speechPlayer_handleInfo_t*)playerHandle)->waveGenerator->generate(sampleCount,sampleBuf);
 }
 

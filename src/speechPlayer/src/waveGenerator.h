@@ -22,7 +22,7 @@ http://www.gnu.org/licenses/gpl.html
 
 class WaveGenerator {
 	public:
-	virtual unsigned int generate(const unsigned int bufSize, sample* buffer)=0;
+	virtual unsigned int generate(const unsigned int bufSize, ngSample* buffer)=0;
 };
 
 #endif

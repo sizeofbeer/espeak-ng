@@ -20,6 +20,6 @@ typedef short sampleVal;
 
 typedef struct {
 	sampleVal value;
-} sample;
+} ngSample;
 
 #endif
