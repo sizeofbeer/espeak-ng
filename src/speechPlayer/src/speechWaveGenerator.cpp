@@ -194,7 +194,11 @@ class SpeechWaveGeneratorImpl: public SpeechWaveGenerator {
 	SpeechWaveGeneratorImpl(int sr): sampleRate(sr), voiceGenerator(sr), fricGenerator(), cascade(sr), parallel(sr), frameManager(NULL) {
 	}
 
+<<<<<<< HEAD
 	unsigned int generate(const unsigned int sampleCount, ngSample* sampleBuf) {
+=======
+	unsigned int generate(const unsigned int sampleCount, ::sample* sampleBuf) {
+>>>>>>> f57b594ec4d45a3616b1c9f558822d7ac33a8871
 		if(!frameManager) return 0; 
 		double val=0;
 		for(unsigned int i=0;i<sampleCount;++i) {
