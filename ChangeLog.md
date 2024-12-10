@@ -9,6 +9,8 @@ The espeak-ng project is a fork of the espeak project.
 
 ### 1.52 (In Development)
 
+*  Add stress marks to phoneme events (Rotem Dan)
+
 android:
 *  Added directBoot support -- beqabeqa473
 
@@ -39,6 +41,7 @@ updated languages:
 *  uz (Uzbek) -- Andiv06
 
 new languages:
+*  en-Shaw (English, Shavian script) -- Luna Rose
 *  ti (Tigrinya) -- Biniam Gebremichael
 *  mto (Totontepec Mixe) -- Bill Dengler, Elizabeth Resendiz
 *  fo (Faroese) -- Andras Eliassen, iSolveIT ApS and Setur.fo/Ravnur
